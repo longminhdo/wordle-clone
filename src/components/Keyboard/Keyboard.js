@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { Icon } from "@iconify/react";
 import Key from "../Key/Key";
 import LongKey from "../Key/LongKey";
+import { Row } from "../Row/Row";
 
 const dummyKeyboard1 = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"];
 const dummyKeyboard2 = ["a", "s", "d", "f", "g", "h", "j", "k", "l"];
@@ -28,11 +29,6 @@ const Keyboard = ({ className }) => {
         </div>
     );
 };
-
-const Row = styled.div`
-    display: flex;
-    margin: 0.3em;
-`;
 
 export default styled(Keyboard)`
     display: flex;
